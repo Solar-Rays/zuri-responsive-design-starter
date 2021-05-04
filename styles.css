@@ -320,6 +320,7 @@ textarea {
     border: 1px solid #bcc3c7;
     background: transparent;
     color: #f0f0f0;
+    resize: none;
 }
 
 div.footer-btn {
@@ -344,4 +345,83 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+.icon {
+    display: none;
+}
+
+/*Further work is needed here.*/
+@media only screen and (max-width: 768px) {
+    ul.nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.background {
+        width: 700px;
+        height: 230px;
+    }
+
+    div.background h4 {
+        padding: 1rem 2rem;
+    }
+    
+    div.hero-background-pos {
+        right: 70%;
+        left: auto;
+    }
+
+    input[type="text"], input[type="email"] {
+        width: 40%;
+    }
+
+    input[type="email"] {
+        margin-right: 0px;
+    }
+    
+    textarea {
+        width: 81%;
+    }
+
+    .nav-bar {
+        overflow: hidden;
+        background-color: black;
+        position: relative;
+    }
+
+    .nav-bar #links {
+        display: none;
+        padding-top: 2.5rem;
+    }
+
+    .nav-bar a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+
+      .nav-bar a.icon {
+        background: #304353;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 4rem;
+        height: 3.7rem;
+        padding-top: 1.3rem;
+        padding-left: 1.2rem;
+      }
+
+      .nav-bar a:hover {
+        background-color: rgb(61, 83, 102);
+        color: white;
+      }
+
+      .active {
+        background-color: #04AA6D;
+        color: white;
+      }
 }
