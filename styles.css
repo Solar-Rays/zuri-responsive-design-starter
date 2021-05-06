@@ -160,6 +160,7 @@ div.snapshot-box {
 
 div.snapshot-box-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
